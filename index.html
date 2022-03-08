@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachraň zvíře</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="bg-dark">
+    <!-- Navbar -->
+    <header class="p-3 bg-dark text-white fixed-top">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+             </a>
+        
+             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-white">Domů</a></li>
+              <li><a href="o_nas.html" class="nav-link px-2 text-white">O nás</a></li>
+              <li><a href="ztracena_zvirata.html" class="nav-link px-2 text-white">Ztracená zvířátka</a></li>
+              <li><a href="nalezena_zvirata.html" class="nav-link px-2 text-white">Nalezená zvířátka</a></li>
+            </ul>
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Hledám zvířátko</button>
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nalezl/a jsem zvířátko</button>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <div class="mx-auto" style=" height: 100px; width: 200px">
+      Centered element
+    </div>
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 my-5 text-center text-white">
+      <h1 class="display-5 fw-bold">Zachraň zvíře</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Zdravíme vás, web zachraň zvíře je studentský projekt, který má účel pomoci lidem, kterým se ztratilo zvíře, na web můžete dát i inzerát, pokud jste zvíře našli. </p>
+      </div>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Hledám zvířátko</button>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nalezl/a jsem zvířátko</button>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Zadejte:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Kontakt na Vás:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Vaše adresa:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Vše o zvířeti:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div> 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+            <button type="button" class="btn btn-outline- me-2" data-bs-dismiss="modal">Poslat inzerát</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal --> 
+    <div class="container">
+      <H1 class="text-white">Nejnovější</H1>
+    </div>
+    <!-- Carousel --> 
+    <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="galerie/istockphoto-1204163981-612x612 cat.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block badge bg-dark" style="width: 15rem;">
+            <h5>Ztracené zvíře</h5>
+            <p>Ztratila se kočka Míla, <a href="ztracena_zvirata.html">podrobnosti</a>.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="galerie/injured-dog-1024x427.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="badge bg-dark" style="width: 20rem;">
+              <h5>Ztracené zvíře</h5>
+              <p>Hledá se pes Doggy klikněte pro více <a href="ztracena_zvirata.html">podrobností</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="galerie/home-page-1024x427.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block badge bg-dark" style="width: 35rem;">
+            <h5>Nalezené zvíře</h5>
+            <p>Včera byl nalezen pes s neznámým jménem, pátráme po majiteli, klikněte pro <a href="nalezena_zvirata.html">podrobnosti</a>.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel --> 
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Zachraň zvíře
+              </h6>
+              <p>
+                Zachraň zvíře je web, který má účel pomoci lidem najít své mazlíčky už od roku 2015.
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Menu
+              </h6>
+              <p>
+                <a href="index.html" class="text-reset">Domů</a>
+              </p>
+              <p>
+                <a href="nalezena_zvirata.html" class="text-reset">Nalezená zvířátka</a>
+              </p>
+              <p>
+                <a href="ztracena_zvirata.html" class="text-reset">Hledaná zvířátka</a>
+              </p>
+              <p>
+                <a href="o_nas.html" class="text-reset">O nás</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+              Kontakt
+              </h6>
+              <p><i class="fas fa-home me-3"></i>Křesnického 379, Praha 4, ČR</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+              salomonmax@seznam.cz
+              </p>
+              <p><i class="fas fa-phone me-3"></i>+420 737 678 319</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>

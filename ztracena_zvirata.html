@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ztracená zvířata</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="bg-dark">
+    <!-- Navbar -->
+    <header class="p-3 bg-dark text-white fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-white">Domů</a></li>
+              <li><a href="o_nas.html" class="nav-link px-2 text-white">O nás</a></li>
+              <li><a href="ztracena_zvirata.html" class="nav-link px-2 text-white">Ztracená zvířátka</a></li>
+              <li><a href="nalezena_zvirata.html" class="nav-link px-2 text-white">Nalezená zvířátka</a></li>
+            </ul>
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Hledám zvířátko</button>
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nalezl/a jsem zvířátko</button>
+            </div>
+        </div>
+      </div>
+    </header>  
+  <!-- Navbar -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Zadejte:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Kontakt na Vás:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Vaše adresa:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Vše o zvířeti:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div> 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+          <button type="button" class="btn btn-outline- me-2" data-bs-dismiss="modal">Poslat inzerát</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal --> 
+  <div class="mx-auto" style=" height: 100px; width: 200px">
+    Centered element
+  </div>
+  <div class="container text-white">
+    <h1>Galerie ztracených zvířat:</h1>
+  </div>
+  <!-- Album -->
+  <div class="album py-5 bg-dark">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="galerie/istockphoto-1204163981-612x612 cat.jpg" alt="">
+
+            <div class="card-body">
+              <p class="card-text"><ul>
+                <li>Jméno: Míla</li>
+                <li>Nalezen: 05.03 2022</li>
+                <li>Kontakt na majitele: 344 876 122</li>
+                <li>Adresa: Šišlanova 9, Praha 3</li>
+              </ul></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">3 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="galerie/injured-dog-1024x427.jpeg" height="175" alt="">
+
+            <div class="card-body">
+              <p class="card-text"><ul>
+                <li>Jméno: Doggy</li>
+                <li>Nalezen: 05.03 2022</li>
+                <li>Kontakt na majitele: 342 435 678</li>
+                <li>Adresa: Červená ulice 6, Praha 5</li>
+              </ul></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">22 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="galerie/images (1).jfif" height="175" alt="">
+
+            <div class="card-body">
+              <p class="card-text"><ul>
+                <li>Jméno: Honza</li>
+                <li>Nalezen: 05.03 2022</li>
+                <li>Kontakt na majitele: 344 567 789</li>
+                <li>Adresa: Nerudova ulice 8, Praha 5</li>
+              </ul></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">2 h</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="galerie/cat12-1024x427.jpg" height="175" alt="">
+
+            <div class="card-body">
+              <p class="card-text"><ul>
+                <li>Jméno: Čenda</li>
+                <li>Nalezen: 05.03 2022</li>
+                <li>Kontakt pro blizší informace: 234 243 311</li>
+                <li>Adresa: Napoleonská ulice 333, Praha 2</li>
+              </ul></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">3 h</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="galerie/images.jfif" height="175" alt="">
+
+            <div class="card-body">
+              <p class="card-text"><ul>
+                <li>Jméno: Tonda a Amálka</li>
+                <li>Nalezen: 05.03 2022</li>
+                <li>Kontakt pro blizší informace: 244 786 433</li>
+                <li>Adresa: Jičínská ulice 3, Praha 4</li>
+              </ul></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">5 h</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="galerie/cat3-1024x427.jpg" height="175" alt="">
+
+            <div class="card-body">
+              <p class="card-text"><ul>
+                <li>Jméno: Janek</li>
+                <li>Nalezen: 05.03 2022</li>
+                <li>Kontakt pro blizší informace: 987 534 312</li>
+                <li>Adresa: Krásná ulice 223, Praha 1</li>
+              </ul></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 h</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Album -->
+  
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Zachraň zvíře
+            </h6>
+            <p>
+              Zachraň zvíře je web, který má účel pomoci lidem najít své mazlíčky už od roku 2015.
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Menu
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset">Domů</a>
+            </p>
+            <p>
+              <a href="nalezena_zvirata.html" class="text-reset">Nalezená zvířátka</a>
+            </p>
+            <p>
+              <a href="ztracena_zvirata.html" class="text-reset">Hledaná zvířátka</a>
+            </p>
+            <p>
+              <a href="o_nas.html" class="text-reset">O nás</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+            Kontakt
+            </h6>
+            <p><i class="fas fa-home me-3"></i>Křesnického 379, Praha 4, ČR</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+            salomonmax@seznam.cz
+            </p>
+            <p><i class="fas fa-phone me-3"></i>+ 420 737 678 318</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+</div>
+</body>
+</html>
